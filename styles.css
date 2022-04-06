@@ -12,7 +12,7 @@ body{
 h1{
     text-align: center;
     text-shadow: 1px 5px wheat;
-    background: url(/Evaluation_HTML_CSS_BOOTSTRAP/media/tennis-terrebattues.jpg);
+    background: url(media/tennis-terrebattues.jpg);
     background-size: 100%;
     
 }
