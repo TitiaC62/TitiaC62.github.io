@@ -1,0 +1,223 @@
+/* Commun à toutes les pages */
+body{
+    background-color: rgba(255, 166, 0, 0.207);
+    
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 1px 5px wheat;
+    background: url(/Evaluation_HTML_CSS_BOOTSTRAP/media/tennis-terrebattues.jpg);
+    background-size: 100%;
+    
+}
+
+nav{
+    background-color: rgba(255, 166, 0, 0.207);
+}
+
+
+
+h2{
+    text-decoration: underline;
+    color: black;
+    text-shadow: 3px 2px rgba(150, 240, 15, 0.974);
+    text-align: center;
+}
+
+.logo{
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+
+/* Page Accueil */
+
+
+article, aside{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: white;
+    
+}
+
+img{
+    height: 300px;
+    width: auto;
+    
+}
+
+.raquette{
+    height: 100px;
+    width: 200px;
+}
+
+article{
+    background-color:rgba(247, 139, 8, 0.434);
+  ;
+        
+}
+
+aside{
+    background-color: rgba(157, 255, 9, 0.199);
+    
+}
+
+
+.dirigeants{
+ text-align: center;
+ font-weight:bold;
+ 
+}
+
+h2{
+    background-color: brown;
+    
+}
+
+
+.maps{
+    border-radius: 10px;
+}
+
+
+.RightSide{
+    color: black;
+    text-align: center;
+}
+
+
+.HistoireDuClub{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.Column1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.Column2{
+    grid-column: 2;
+    grid-row: 1;
+    
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    
+}
+
+/* Page Equipe */
+.menuEquipe {
+    display: flex;                
+    padding:0;                    
+    justify-content:center;
+}
+
+.menuEquipe a {
+    display:block;                
+    min-width: 120px;              
+    margin: 1rem;               
+    padding: 0.5rem 0;            
+    text-align: center;             
+      background-color: orangered; 
+    color: #fff;                  
+    text-decoration: none;        
+    border: 1px solid #fff;       
+    border-radius: 4px;          
+    transition: all 1s ;         
+}
+.menuEquipe a.actif {    
+    background-color:red ; 
+    color: white ;
+    border-color:white ;
+}
+
+.menuEquipe a:hover, .menuEquipe a:hover.actif{
+    background-color:rgb(238, 255, 0);
+    color: red;
+    border-color: red;
+}
+
+table, thead, tbody, tr, td{
+    border: 1px solid grey;
+    color: black;
+    margin: auto;
+
+}
+
+thead{
+    background-color: gray;
+}
+
+tbody{
+    background-color: azure;
+}
+
+
+
+.titreequipe{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.tableau{
+    margin-bottom: 20px;
+   padding-left: 10px;
+   
+    
+}
+
+.container3{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
+        
+}
+
+.column3{
+    grid-column: 2;
+    grid-row: auto;
+    
+}
+
+
+
+/* Page Contact */
+
+.contact{
+    color: rgb(228, 148, 9);
+    text-align: center;
+}
+
+.textcontact{
+    font-size:xx-large;
+}
+
+form{
+    border: 15px groove grey;
+    border-radius: 5px;
+    background-color:coral;
+}
