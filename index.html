@@ -26,7 +26,7 @@
   <!--début du header-->
       <header>
         
-        <nav class="navbar navbar-expand-md navbar-light  ">
+        <nav class="navbar navbar-expand-md navbar-light">
           <div class="container">
               <a class="navbar-brand fw-bold" href="index.html"><img src="icons/tennis-court.svg" class="icon">  TCOP</a>
 
@@ -58,10 +58,22 @@
          </h1>
  
    <!--Left side-->
-        <section class="row">
-          <section class=" col-8 offset-1">
+        <section>
+          <section >
+            <h2 class="LastNews">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                     <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                     <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+                 </svg> 
+              Last News  
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                    <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                    <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+                 </svg>
+           </h2>
+
             <h2> Stage sportif</h2>
-               <article class="container">                       
+               <article>                       
                  <p class="Column1"> Nous vous attendons nombreux pour une nouvelle session de stage sportif qui aura lieu du 9 au 23 avril.
                   Les passages de niveaux seront effectués le vendredi de chaque semaine.
                   Il y a 10 places pour chaque semaine, soit à la journée avec la possibilité de manger son repas sur place (repas non inclus) ou à la demie journée, soit le matin soit l'après-midi 
@@ -69,7 +81,7 @@
 
                   Pour vous inscrire n'hésitez pas à contacter notre éducatrice sportive Camille par téléphone ou par mail. </p>
                 
-                <img src="media/stageSportif.png" alt="Stage sportif Avril" class="Column2">
+                <img src="media/stageSportif.png" class="img-fluid" alt="Stage sportif Avril" class="Column2">
               </article>
        
             <h2> Tournoi Open de Bourbourg</h2>
@@ -83,7 +95,7 @@
                    </br>
                  Inscription via Ten'up possible </p>
 
-                 <img src="media/tournoiBourbourg.jpg" alt="Tournoi Open de Bourbourg" Class="Column2">
+                 <img src="media/tournoiBourbourg.jpg" class="img-fluid" alt="Tournoi Open de Bourbourg" Class="Column2">
               </article>
 
             <h2>Roland Garros</h2>
@@ -91,14 +103,14 @@
                  <p class="Column2">Comme chaque année les internationaux de France vont avoir lieu du 16 mai au 5 juin. 
                  vous trouverez toutes les actualités sur le site officiel de <a href="https://www.rolandgarros.com/fr-fr/" aria-label="site de roland Garros"> Roland Garros</a></p>
 
-                 <img src="media/RolandGarros.png" alt="logo Roland Garros" class="Column1" >
+                 <img src="media/RolandGarros.png" class="img-fluid" alt="logo Roland Garros" class="Column1" >
 
               </article>
 
          </section>
 
           <!--Right Side-->
-       <section class="col-2 ">
+       <section>
           <aside class="RightSide">
             <p class="HistoireDuClub">Histoire du Club</p>
             <p> Le TCOP existe depuis 1981 et a beaucoup évolué avec le temps. 
@@ -120,11 +132,13 @@
 
           <aside class="maps">
               <!--Maps-->
-            <div class="col-md-8" >
-              <iframe width="250" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=384%20Rue%20des%20Petits%20Moulins,%2062215%20Oye-Plage+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-                 <a href="https://www.gps.ie/marine-gps/">boat tracking</a>
-              </iframe>
-             </div>
+              <div class="row">
+               <div class="col" >
+                  <iframe width="350" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=384%20Rue%20des%20Petits%20Moulins,%2062215%20Oye-Plage+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    <a href="https://www.gps.ie/marine-gps/">boat tracking</a>
+                  </iframe>
+               </div>
+              </div>
           </aside>
         </section>
       </section>
@@ -140,4 +154,14 @@
 
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+</script>
 </html>
