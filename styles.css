@@ -68,11 +68,8 @@ article, aside{
     
 }
 
-img{
-    height: auto;
-    width: auto;
-    
-}
+   
+
 
 .raquette{
     height: 20px;
@@ -97,6 +94,10 @@ aside{
  
 }
 
+.bureau{
+    height: 300px;
+    width: auto;
+}
 h2{
     background-color: brown;
     margin: 10px;
