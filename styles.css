@@ -1,41 +1,58 @@
 /* Commun à toutes les pages */
 body{
-    background-color: rgba(255, 166, 0, 0.207);
-    
+    background-color: #ffeccc; 
+  
 }
+
+.TCOP{
+    display: flex;
+    color: black;
+}    
+
+
 
 .icon{
     width: 2em;
     height: 2em;
-}
-
-h1{
-    text-align: center;
-    text-shadow: 1px 5px wheat;
-    background: url(media/tennis-terrebattues.jpg);
-    background-size:auto;
     
 }
 
-nav{
-    background-color: rgba(255, 166, 0, 0.207);
+.banniere{
+    background: url(media/tennis-terrebattues.jpg);
+    background-size:auto;
 }
 
+h1{
+    text-shadow: 1px 5px wheat; 
+   margin-top: 20px;
+   
+}
+
+
+img{
+     margin: 10px;
+     text-align: center;
+
+}
 
 
 h2{
     text-decoration: underline;
     color: black;
-    text-shadow: 3px 2px rgba(150, 240, 15, 0.974);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    font-size:3vh;
+    font-size: 3vh;
+    background-color: #a4303f;
+    margin: 10px;
 }
+
 
 .logo{
     align-items: center;
     width: 5em;
     height: 5em;
     margin-bottom: 10px;
+    display: none;
 }
 
 ul, li{
@@ -50,40 +67,50 @@ ul, li{
 }
 
 footer{
-    padding: 40px;
-    background-color: rgba(255, 166, 0, 0.638);
+    background: url(media/tennis-terrebattues.jpg);
+    background-size:auto;
 }
 
 
 /* page Accueil */
 
 
+article{
+    
+    background-color: #f2d0a4;
+    margin: 10px;
+   color: white;
+           
+}
 
 .LastNews{
-    background-color: yellow;
+    justify-content: center;
+    text-shadow: 1px 1px #fff;
+    color:#d98324;
+    border: #d98324;
+    display: flex;
+    align-items: center;
+    background-color: #a4303f;
+
 }
 
 article, aside{
     border-radius: 10px;
     margin-bottom: 10px;
-    color: white;
+    
     
 }
-
    
 .raquette{
     height: 20px;
     width: 20px;
+    margin-top: 20px;
 }
 
-article{
-    background-color:rgba(247, 139, 8, 0.434);
-    margin: 10px;
-        
-}
+
 
 aside{
-    background-color: rgba(157, 255, 9, 0.199);
+   background-color: #c8d6af; 
     
 }
 
@@ -98,11 +125,8 @@ aside{
     height: 300px;
     width: auto;
 }
-h2{
-    background-color: brown;
-    margin: 10px;
-    
-}
+
+
 
 .Column1{
     margin: 10px;
@@ -117,6 +141,7 @@ h2{
 .RightSide{
     color: black;
     text-align: center;
+    margin: 10px;
 }
 
 
@@ -133,9 +158,14 @@ div.card{
     margin: auto;
     padding: 10px;
     margin-bottom: 10px;
+    width: 18rem;
+        
+    
 }
 
-/* Equipe Mascuile */
+
+
+/* Equipe Masculine et féminine */
 
 .Equipe_Masculine{
     margin: 5px 10px;
@@ -149,6 +179,12 @@ div.card{
     margin: 10px;
 }
 
+.card{
+    display: flex;
+}
+
+
+
 /* Page Equipe */
 .menuEquipe {
     display: flex;                                  
@@ -161,7 +197,7 @@ div.card{
     margin: 10px;               
     padding: 1rem;            
     text-align: center;             
-      background-color: orangered; 
+    background-color: #ffeccc; 
     color: #fff;                  
     text-decoration: none;        
     border: 1px solid #fff;       
@@ -169,15 +205,15 @@ div.card{
     transition: all 1s;         
 }
 .menuEquipe a.actif {    
-    background-color:red; 
+    background-color:#a4303f; 
     color: white;
     border-color:white;
 }
 
 .menuEquipe a:hover, .menuEquipe a:hover.actif{
-    background-color:rgb(238, 255, 0);
-    color: red;
-    border-color: red;
+    background-color: #ffeccc;
+    color: #a4303f;
+    border-color: #a4303f;
 }
 
 table, thead, tbody, tr, td{
@@ -195,17 +231,28 @@ tbody{
     background-color: azure;
 }
 
+.tableau{
+    margin:20px;
+    box-shadow: 9px 5px 9px 3px rgba(0,0,0,0.46);
+    margin-right: 200px;
+    margin-left: 200px;
+}
 
 
 .titreequipe{
-    margin-left: 40px;
-    margin-right: 40px;
+    
+    justify-content: center;
+    text-shadow: 1px 1px #fff;
+    display: flex;
+    align-items: center;
+    background-color: #a4303f;
+    border: 2px double #ffeccc;
+    border-radius: 50%;
 }
 
-.tableau{
-    margin-bottom: 20px;
-   
-}
+
+
+
 
 
 
@@ -213,7 +260,7 @@ tbody{
 /* Page Contact */
 
 .contact{
-    color: rgb(228, 148, 9);
+    color: #f2d0a4;
     text-align: center;
 }
 
@@ -224,6 +271,6 @@ tbody{
 form{
     border: 15px groove grey;
     border-radius: 5px;
-    background-color:coral;
+    background-color: #a4303f;
 }
 

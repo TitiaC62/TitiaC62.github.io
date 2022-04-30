@@ -12,6 +12,9 @@
             
             <!--link CSS-->
     <link rel="stylesheet" href="./styles.css">
+
+            <!--link media-->
+    <link rel="stylesheet" href="media.css">
   
 
       <title>Tennis Club de Oye Plage</title>
@@ -22,18 +25,31 @@
 
     <!--Début du body-->
 <body>
-       
-  <!--début du header-->
-      <header>
+<header>
+  <!-- bannière-->
+
+  <section class="banniere">
+    <div class="TCOP">
+      <a class="navbar-brand fw-bold" href="index.html"><img src="icons/tennis-court.svg" class="icon">  TCOP</a>
+         <img src="icons/sports_tennis_black_24dp.svg" alt="Raquette de tennis" class="raquette">
+            <h1>  Tennis Club de Oye Plage </h1> 
+         <img src="icons/sports_tennis_black_24dp.svg" alt="Raquette de tennis" class="raquette"> 
+           
+        <img src="media/36642780_251732852225158_4352637655834427392_n.png" alt="Logo du TCOP" class="logo"> 
+         
+    </div>
+  </section>
+   
+  
+  <!--début de la navbar-->
+      
         
         <nav class="navbar navbar-expand-md navbar-light">
           <div class="container">
-              <a class="navbar-brand fw-bold" href="index.html"><img src="icons/tennis-court.svg" class="icon">  TCOP</a>
-
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
               <ul class="navbar-nav">
                   <li class="nav-item active">
                       <a  class="nav-link" href="./Page_VieDuClub.html"> Vie du Club</a>
@@ -52,73 +68,91 @@
 
       </header>
 
-         <h1> 
-          <p class="titre"> <img src="icons/sports_tennis_black_24dp.svg" alt="Raquette de tennis" class="raquette">  Tennis Club de Oye Plage  <img src="icons/sports_tennis_black_24dp.svg" alt="Raquette de tennis" class="raquette"> </p>
-            <img src="media/36642780_251732852225158_4352637655834427392_n.png" alt="Logo du TCOP" class="logo">
-         </h1>
+         
  
    <!--Left side-->
-        <section>
-          <section >
-            <h2 class="LastNews">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
-                     <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
-                     <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
-                 </svg> 
-              Last News  
-                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
-                    <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
-                    <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
-                 </svg>
-           </h2>
+    <main class="Container">
+        <section class="LeftSide ">
+          <section class="">
+            <div class="LastNews">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+              </svg> 
+                  
+                 <h2> Last News</h2>     
+                
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                  <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                  <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+              </svg>
+            </div>
+           
+           <h2> Incendie</h2>
+               <article >                       
+                 <p class="Column"> 
+                  Un incendie a eu lieu cette nuit dans le club house détruisant l'intégralité de celui-ci ainsi qu'une partie de la bache du court de tennis.
+                  Les pompiers ainsi que Monsieur le Maire ont rapidement été sur place et sont restés de 4h30 jusqu'à 7h30 afin d'être sur qu'il n'y ait pas de reprise de feu.
+                  Les lieux ont été sécurisés ce matin par les employés municipaux.
+                 </br>
+                  Nous vous demandons de ne pas vous rendre sur place afin de respecter l'enquête qui a lieu.
+                </br>
+                  Les cours de tennis sont annulés jusqu'à nouvel ordre, et les rencontres auront lieux à l'extérieur.
+                 </br>
+                 C'est un coup dur pour le club, mais nous saurons nous relever.</p>
+                
+                <a href="https://www.nordlittoral.fr/141753/article/2022-04-13/le-club-house-de-tennis-de-oye-plage-ravage-par-un-incendie-photos-et-video"> lien "Nord littoral"</a>
+              </article>
+
 
             <h2> Stage sportif</h2>
-               <article>                       
-                 <p class="Column1"> Nous vous attendons nombreux pour une nouvelle session de stage sportif qui aura lieu du 9 au 23 avril.
+               <article >                       
+                 <p class="Column"> Nous vous attendons nombreux pour une nouvelle session de stage sportif qui aura lieu du 9 au 23 avril.
                   Les passages de niveaux seront effectués le vendredi de chaque semaine.
                   Il y a 10 places pour chaque semaine, soit à la journée avec la possibilité de manger son repas sur place (repas non inclus) ou à la demie journée, soit le matin soit l'après-midi 
                   Les tarifs restent inchangés et sont de 60€ la semaine en journée complète, 40€ la semaine en demie-journée.
 
                   Pour vous inscrire n'hésitez pas à contacter notre éducatrice sportive Camille par téléphone ou par mail. </p>
                 
-                <img src="media/stageSportif.png" class="img-fluid" alt="Stage sportif Avril" class="Column2">
+                <img src="media/stageSportif.png"  alt="Stage sportif Avril">
               </article>
        
             <h2> Tournoi Open de Bourbourg</h2>
-              <article class="container2">
+              <article >
 
                 
-                 <p class="Column1">Cher licenciés, le SC Bourbourg vous propose son 28ème Open.
+                 <p class="Column">Cher licenciés, le SC Bourbourg vous propose son 28ème Open.
                   N'hésitez pas à vous y inscrire. 
                    </br>
                  Juge arbitre : Clémence Verrons 
                    </br>
                  Inscription via Ten'up possible </p>
 
-                 <img src="media/tournoiBourbourg.jpg" class="img-fluid" alt="Tournoi Open de Bourbourg" Class="Column2">
+                 <img src="media/tournoiBourbourg.jpg"  alt="Tournoi Open de Bourbourg" >
               </article>
 
             <h2>Roland Garros</h2>
-               <article class="container2">
-                 <p class="Column2">Comme chaque année les internationaux de France vont avoir lieu du 16 mai au 5 juin. 
+               <article >
+                 <p class="Column">Comme chaque année les internationaux de France vont avoir lieu du 16 mai au 5 juin. 
                  vous trouverez toutes les actualités sur le site officiel de <a href="https://www.rolandgarros.com/fr-fr/" aria-label="site de roland Garros"> Roland Garros</a></p>
 
-                 <img src="media/RolandGarros.png" class="img-fluid" alt="logo Roland Garros" class="Column1" >
+                 <img src="media/RolandGarros.png" alt="logo Roland Garros" >
 
               </article>
 
-         </section>
+            </section>
+          </section>
 
           <!--Right Side-->
-       <section>
-          <aside class="RightSide">
+       <section class="RightSide">
+          <aside >
             <p class="HistoireDuClub">Histoire du Club</p>
             <p> Le TCOP existe depuis 1981 et a beaucoup évolué avec le temps. 
               Il est aujourd'hui présidé par Monsieur Daniel GOSSELIN.</p>
             <p> Le TCOP dispose d'un terrain de tennis intérieur et de nombreux licenciés.</p>
           </aside>
 
-          <aside class="RightSide" >
+          <aside>
             <p class="HistoireDuClub">Membres du Bureau</p>
             <p>Elus le samedi 26.09.2020:</p>
             <img src="media/membres_bureau.jpeg" alt="membres_bureau" class="bureau">
@@ -132,8 +166,9 @@
           </aside>
 
           <aside class="maps">
+
               <!--Maps-->
-              <div class="row">
+              <div class="row" >
                <div class="col" >
                   <iframe width="350" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=384%20Rue%20des%20Petits%20Moulins,%2062215%20Oye-Plage+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                     <a href="https://www.gps.ie/marine-gps/">boat tracking</a>
@@ -142,16 +177,14 @@
               </div>
           </aside>
         </section>
-      </section>
+    </main>
 
    
     <!--début du footer-->
     <footer>
     <section class=" row">
-      <div class="col">
-        <img src="media/36642780_251732852225158_4352637655834427392_n.png" alt="logo">
-      </div>
 
+      
       <div class="col">                 
         <ul >
             <li>
@@ -185,6 +218,8 @@
       </ul>
       </div>
     </section>
+
+
      <!-- Modal / Mentions légales -->
 
  <div class="modal fade" id="mentionslegales" tabindex="-1" aria-hidden="true">
@@ -258,6 +293,8 @@
 
 
 </body>
+
+<!--script-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>

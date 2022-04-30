@@ -1,0 +1,284 @@
+/* smartphone */
+
+@media screen and (min-width: 600px)  {
+    
+/* Commun à toutes les pages */
+
+.TCOP{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+.banniere{
+    background: url(media/tennis-terrebattues.jpg);
+    background-size:auto;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 1px 5px wheat;
+    
+}
+
+
+.logo{
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+
+/* Page Accueil */
+
+
+article, aside{
+    border-radius: 10px;
+    margin-bottom: 10px;      
+    
+}
+
+
+img{
+    height: auto;
+    width: auto;
+       
+}
+
+img.raquette{
+    height: 50px;
+    width: 50px;
+}
+
+
+/* Page Vie du club */
+
+.card{
+    text-align: center;
+}
+
+.div-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top{
+    height: 100px;
+    width: auto;
+    
+}
+
+.box-equipe{
+    padding-top: 100px;
+    
+}
+
+
+
+/* Page Equipe */
+.menuEquipe {
+    display: flex;                
+    padding:0;                    
+    justify-content:center;
+}
+
+.menuEquipe a {
+    display:block;                
+    min-width: 120px;              
+    margin: 1rem;               
+    padding: 0.5rem 0;            
+    text-align: center;             
+    background-color: #a4303f;
+    color: #fff;                  
+    text-decoration: none;        
+    border: 1px solid #fff;       
+    border-radius: 4px;          
+    transition: all 1s ;         
+}
+
+
+.menuEquipe a.actif {    
+    background-color:red ; 
+    color: white ;
+    border-color:white ;
+}
+
+.menuEquipe a:hover, .menuEquipe a:hover.actif{
+    background-color: #f2d0a4;
+    color: #a4303f;
+    border-color: #a4303f;
+}
+
+
+.titreequipe{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.tableau{
+    margin-bottom: 20px;
+   padding-left: 10px;
+       
+}
+
+
+
+/* Page Contact */
+
+.contact{
+    color: rgb(90, 0, 2);
+    text-align: center;
+}
+
+.textcontact{
+    font-size:xx-large;
+}
+
+form{
+    border: 15px groove grey;
+    border-radius: 5px;
+    background-color:rgb(90, 0, 2);
+}
+
+}
+
+/* tablet and desktop */
+
+
+@media screen and (min-width: 768px) {
+
+    /* Commun à toutes les pages */
+.icon{
+    width: 70px;
+    height: 70px;
+}
+
+
+.logo{
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+
+/* Page Accueil */
+
+
+p.titre{
+    font-size: x-larger; 
+    }
+
+img{
+    height: 400px;
+    width: auto;
+       
+}
+
+.raquette{
+    height: 200px;
+    width: 200px;
+}
+
+p.Column{
+    padding: 10px;
+    margin:  0px 20px;
+}
+
+.Container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 1fr;
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+
+
+.LeftSide{
+    grid-column-start: 2;
+   
+}
+ 
+
+
+.RightSide{
+    grid-column-start: 3;
+}
+
+
+
+/* Page Equipe */
+.menuEquipe {
+    display: flex;                
+    padding:0;                    
+    justify-content:center;
+}
+
+.menuEquipe a {
+    display:block;                
+    min-width: 120px;              
+    margin: 1rem;               
+    padding: 0.5rem 0;            
+    text-align: center;             
+    background-color: rgb(217, 131, 36);
+    color: #fff;                  
+    text-decoration: none;        
+    border: 1px solid #fff;       
+    border-radius: 4px;          
+    transition: all 1s ;         
+}
+
+
+
+
+
+
+
+.tableau{
+    margin-bottom: 20px;
+   padding-left: 10px;
+   
+    
+}
+
+
+
+.card{
+    display: inline-block;
+}
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+*{font-size: large;}
+
+.card{
+    display: inline-block;
+}
+
+
+}
+
+@media screen and (min-width: 2560px) {
+
+    *{font-size:xx-large}
+
+    .card{
+        display: inline-block;
+    }
+    
+    
+    }

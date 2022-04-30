@@ -12,6 +12,8 @@
             
             <!--link CSS-->
     <link rel="stylesheet" href="./styles.css">
+     <!--link media-->
+     <link rel="stylesheet" href="media.css">
   
 <div class="titre">
     <title>Tennis Club de Oye Plage</title>
@@ -25,35 +27,47 @@
   <!--début du header-->
   <header>
         
-    <nav class="navbar navbar-expand-md navbar-light  ">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html"><img src="icons/tennis-court.svg" class="icon">  TCOP</a>
+     <!-- bannière-->
 
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-              <li class="nav-item active">
-                  <a  class="nav-link" href="./Page_VieDuClub.html"> Vie du Club</a>
-              </li>
-              <li class="nav-item">
-                  <a  class="nav-link" href="./Page_equipe.html"> Les équipes </a>
-              </li>
-              
-              <li class="nav-item ">
-                  <a  class="nav-link" href="./Page_Contact.html"> Contact</a>
-              </li>
-          </ul>
-        </div>
-      </div>
-  </nav>
+  <section class="banniere">
+    <div class="TCOP">
+      <a class="navbar-brand fw-bold" href="index.html"><img src="icons/tennis-court.svg" class="icon">  TCOP</a>
+         <img src="icons/sports_tennis_black_24dp.svg" alt="Raquette de tennis" class="raquette">
+            <h1>  Tennis Club de Oye Plage </h1> 
+         <img src="icons/sports_tennis_black_24dp.svg" alt="Raquette de tennis" class="raquette"> 
+           
+        <img src="media/36642780_251732852225158_4352637655834427392_n.png" alt="Logo du TCOP" class="logo"> 
+         
+    </div>
+  </section>
+   
+  
+  <!--début de la navbar-->
+      
+        
+        <nav class="navbar navbar-expand-md navbar-light">
+          <div class="container">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item active">
+                      <a  class="nav-link" href="./Page_VieDuClub.html"> Vie du Club</a>
+                  </li>
+                  <li class="nav-item">
+                      <a  class="nav-link" href="./Page_equipe.html"> Les équipes </a>
+                  </li>
+                  
+                  <li class="nav-item ">
+                      <a  class="nav-link" href="./Page_Contact.html"> Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
 
-
-      <h1> 
-        <p class="titre"> <img src="icons/sports_tennis_black_24dp.svg" alt="Raquette de tennis" class="raquette">  Tennis Club de Oye Plage  <img src="icons/sports_tennis_black_24dp.svg" alt="Raquette de tennis" class="raquette"> </p>
-          <img src="media/36642780_251732852225158_4352637655834427392_n.png" alt="Logo du TCOP" class="logo">
-       </h1>
+      </header>
 
        <!--Menu des équipes-->
 
@@ -71,11 +85,17 @@
 
 
         <!--début tableau femme-->
-                <h2 class="titreequipe"> <img src="icons/tennis-player-fille.svg" class="icon" alt="icone joueuse fille"> Les équipes <img src="icons/tennis-player-fille.svg" class="icon" alt="icone joueuse fille"></h2>
-        <section class="container3">
-            <div class="tableau column3">
+        <div class="titreequipe">
+             <img src="icons/tennis-player-fille.svg" class="icon" alt="icone joueuse fille">
+                 <h2 id="EquipeFemme"> Les équipes femmes </h2>
+             <img src="icons/tennis-player-fille.svg" class="icon" alt="icone joueuse fille">
+        </div>
+                
+        <section class="tableau">
+            <div>
+                <!--tableau femme compétition-->
                 <div >
-                   <h3 id="EquipeFemme">L'équipe femme  </h3>
+                   <h3 >L'équipe femme senior  </h3>
                 
                 <p>Le TCOP a deux équipes femmes : une équipe loisirs et une équipe compétition. </p>
                 <p>Elles évoluent en championnat départemental.</p>
@@ -176,13 +196,29 @@
 
             </div>
 
+
+        <!--tableau loisir femme-->
+            <div>
+                <h3 >L'équipe femme loisir  </h3>
+
+                <p>Depuis la rentrée 2021, le TCOP a ouvert un créneau pour les femmes débutantes en tennis ou ne souhaitant pas en faire en compétition. </br>
+                    Ce créneau fonctionne bien puisque pas moins de 7 inscrites  sous la coupe de Camille L. leur coach.
+                </p>
+            </div>
+
         </section> 
         <!--fin du tableau femme-->
 
         <!--début tableau homme-->
-        <h2 class="titreequipe"><img src="icons/tennis-player-homme.svg" class="icon" alt="icone joueur homme"> Les équipes <img src="icons/tennis-player-homme.svg" class="icon" alt="icone joueur homme"></h2>
-        <section>
-            <div class="tableau">
+        <div class="titreequipe">
+            <img src="icons/tennis-player-homme.svg" class="icon" alt="icone joueur homme">
+            <h2>Les équipes hommes </h2> 
+            <img src="icons/tennis-player-homme.svg" class="icon" alt="icone joueur homme"></h2>
+        </div>
+
+         
+        <section class="tableau">
+            <div>
                    <h3 id="EquipeHomme">L'équipe homme sénior </h3>
                 
                 <p>Le TCOP a plusieurs équipes hommes : une équipe loisirs, et plusieurs équipes compétitions : Sénior, +35, +55. </p>
@@ -262,15 +298,37 @@
 
             </div>
 
+        <!--tableau loisir homme-->
+            <div>
+                <h3 >L'équipe homme loisir  </h3>
+
+                <p>Equipe Messieurs ne souhaitant pas faire de compétition ou étant débutant.
+                </p>
+            </div>
+
+        <!--tableau vétéran-->
+
+            <div>
+                <h3 >L'équipe homme vétéran  </h3>
+
+                <p>Equipe Messieurs dans les catégories +45 et + 65 ans.
+                    Tableau des compétitions à venir.
+                </p>
+            </div>
 
         </section>
         <!--Fin du tableau homme-->
 
         <!--début de la partie des enfants-->
 
-            <h2 class="titreequipe"> <img src="icons/tennis-player-enfant.svg" class="icon" alt="icone joueur enfant"> Les enfants <img src="icons/tennis-player-enfant.svg" class="icon" alt="icone joueur enfant"></h2>
-        <section >
-            <div class="tableau">
+        <div class="titreequipe">
+            <img src="icons/tennis-player-enfant.svg" class="icon" alt="icone joueur enfant">
+            <h2>Les enfants </h2>
+            <img src="icons/tennis-player-enfant.svg" class="icon" alt="icone joueur enfant">
+        </div>   
+        
+        <section class="tableau">
+            <div >
                 <h3 id="Enfant"> Les différents plateaux enfants </h3>
 
                     <p>Pour les enfants, il existe différents plateaux possible: </br>
