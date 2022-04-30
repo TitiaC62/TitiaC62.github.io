@@ -79,7 +79,7 @@
                 <div class="card-body">
                     <h5 class="card-title"> Différents Stages sportifs </h5>
                         <p class="card-text">Retour en image sur le stage sportif qui s'est déroulé péndant les vacances de février.</p>
-            
+
 
                                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#stageSportif" > Voir les photos </button>
 
@@ -94,9 +94,9 @@
 
                                         <div class="offcanvas-body">
 
-                                            <div id="stageSportif" class="carousel slide" data-bs-ride="carousel">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
+                                         <div id="stageSportif" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner ">
+                                                <div class="carousel-item active ">
                                                     <img src="media/stage1.jpeg" class="d-block img-fluid" alt="stage enfant">
                                                 </div>
                                                 <div class="carousel-item">
@@ -150,5 +150,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous">
+
+var offcanvasElementList = [].slice.call(document.querySelectorAll('.offcanvas'))
+var offcanvasList = offcanvasElementList.map(function (offcanvasEl) {
+  return new bootstrap.Offcanvas(offcanvasEl)
+})
 </script>
+
+
 </html>

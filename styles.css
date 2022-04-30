@@ -30,11 +30,16 @@ h1{
 
 
 img{
-     margin: 10px;
+    margin: 10px;
      text-align: center;
+     height:30vh;
 
 }
 
+.video{
+    height: 30vh;
+    width: auto;
+}
 
 h2{
     text-decoration: underline;
@@ -170,6 +175,15 @@ div.card{
 .Equipe_Masculine{
     margin: 5px 10px;
 }
+
+.Equipe_Feminine, .Equipe_Masculine{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+
 
 .Equipe_Masculine,div{
     margin: 10px;
