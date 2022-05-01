@@ -14,10 +14,10 @@ body{
 
 .TCOP{
     display: flex;
+    justify-content: center;
     color: black;
    margin-top: 0;
 }    
-
 
 
 .icon{
@@ -37,13 +37,21 @@ h1{
    
 }
 
-/*
-img{
+
+.articles-homepage img{
     margin: 10px;
      text-align: center;
      height:30vh;
 
-}*/
+}
+
+.articles-homepage-container{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
 
 img{
     object-fit: cover;
@@ -69,6 +77,7 @@ h2{
      width: 5em;
     height: 5em;
     margin-bottom: 10px;
+    
     
 }
 
@@ -133,6 +142,7 @@ aside{
 
 .img-RG{
     border-radius: 50%;
+    width: 12rem;
 }
 
 .dirigeants{
@@ -172,20 +182,11 @@ aside{
 
 /* Page Vie du Club */
 
-/*
-div.card{
-    margin: auto;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 18rem;    
-}*/
 
 .carousel-item{
     object-fit: cover;
     height: auto;
 }
-
-
 
 
 /* Equipe Masculine et féminine */
@@ -255,10 +256,9 @@ tbody{
 }
 
 .tableau{
-    margin:20px;
+    margin: 10px;
     box-shadow: 9px 5px 9px 3px rgba(0,0,0,0.46);
-    margin-right: 200px;
-    margin-left: 200px;
+   
 }
 
 
@@ -272,6 +272,8 @@ tbody{
     border: 2px double #ffeccc;
     border-radius: 50%;
 }
+
+
 
 
 
