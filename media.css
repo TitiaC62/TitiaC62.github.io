@@ -1,302 +1,265 @@
-/* smartphone */
+/* smartphone tablet and desktop a partir de 600px */
 
-@media screen and (min-width: 600px)  {
-    
+/* changements majeurs :
+- apparition du logo du TCOP
+- navbar qui prend la page entière
+- les articles et l'aside se partagent la page index
+- les cards sur la page vie du club sont côtes à côtes */
+
+@media screen and (min-width: 600px) {
     /* Commun à toutes les pages */
-    
-    .TCOP{
+
+    .TCOP {
         display: flex;
         justify-content: space-around;
         color: black;
-    
     }
-    
-    .icon{
+
+    .icon {
         width: 50px;
         height: 50px;
     }
-    
-    .banniere{
-        background: url(media/tennis-terrebattues.jpg);
-        background-size:auto;
+
+    .banniere {
+        background: url(../images/media/tennis-terre-battues.jpg);
+        background-size: auto;
     }
-    
-    h1{
+
+    h1 {
         text-align: center;
         text-shadow: 1px 5px wheat;
-        
     }
-    
-    
-    .logo{
-        width: 50px;
-        height: 50px;
-        margin-bottom: 10px;
+
+    .logo.pages {
+        width: 5rem;
+        height: 5rem;
+        /* margin-bottom: 10px; */
+        /* border-radius: 50%; */
+        /* border: 6px solid #5a0102; */
     }
-    
-    ul, li{
+
+    ul,
+    li {
         list-style-type: none;
     }
-    
-    
+
     /* Page Accueil */
 
-    .Container{
+    .Container {
         display: grid;
-        grid-template-columns: 1fr 4fr 2fr 1fr;
+        /* grid-template-columns: 1fr 4fr 2fr 1fr; */
         grid-gap: 5px;
-        grid-auto-rows: minmax(100px, auto);
+        /* grid-auto-rows: minmax(100px, auto); */
     }
-    
-        
-    .LeftSide{
+
+    .Articles_LeftSide {
         grid-column-start: 2;
-       
     }
-     
-       
-    .RightSide{
+
+    .Aside_RightSide {
         grid-column-start: 3;
     }
-      
-    
-    article, aside{
+
+    article,
+    aside {
         border-radius: 10px;
-        margin-bottom: 10px;      
-        
+        margin-bottom: 10px;
     }
-      
-    .articles-homepage-container{
+
+    .articles-homepage-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: justify;
-        
     }
 
-    .articles-homepage img{
+    .articles-homepage img {
         margin: 10px;
-         text-align: center;
-         height:50vh;
-    
+        text-align: center;
+        height: 50vh;
     }
 
-    
-    img.raquette{
+    img.raquette {
         height: 50px;
         width: 50px;
     }
 
-    
-    
     /* Page Vie du club */
-    
-    .card{
+
+    .card {
         text-align: center;
-        
     }
-    
-    .div-cards{
+
+    .div-cards {
         display: flex;
         justify-content: space-around;
     }
-    
-    .card-img-top{
+
+    .card-img-top {
         height: 17rem;
-              
     }
-    
-     
-    }
-    
-    
-    
+
     /* Page Equipe */
-    .menuEquipe {
-        display: flex;                
-        padding:0;                    
-        justify-content:center;
+    .menu-equipe {
+        display: flex;
+        padding: 0;
+        justify-content: center;
     }
-    
-    .menuEquipe a {
-        display:block;                
-        min-width: 100px;              
-        margin: 1rem;               
-        padding: 0.5rem 0;            
-        text-align: center;             
+
+    .menu-equipe a {
+        display: block;
+        min-width: 100px;
+        margin: 1rem;
+        padding: 0.5rem 0;
+        text-align: center;
         background-color: #a4303f;
-        color: #fff;                  
-        text-decoration: none;        
-        border: 1px solid #fff;       
-        border-radius: 4px;          
-        transition: all 1s ;         
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        transition: all 1s;
     }
-    
-    
-    .menuEquipe a.actif {    
-        background-color:red ; 
-        color: white ;
-        border-color:white ;
+
+    .menu-equipe a.actif {
+        background-color: red;
+        color: white;
+        border-color: white;
     }
-    
-    .menuEquipe a:hover, .menuEquipe a:hover.actif{
+
+    .menu-equipe a:hover,
+    .menu-equipe a:hover.actif {
         background-color: #f2d0a4;
         color: #a4303f;
         border-color: #a4303f;
     }
-    
-    
-    
-    .tableau{
-        margin-bottom: 20px;
-       padding-left: 10px;
-           
+
+    .Container_Equipe {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
     }
-    
-    
-    
+
+    .tableau {
+        margin-bottom: 20px;
+        padding-left: 10px;
+        margin: 10px;
+        box-shadow: 9px 5px 9px 3px rgba(0, 0, 0, 0.46);
+        grid-column-start: 2;
+    }
+
     /* Page Contact */
-    
-    .contact{
+
+    .contact {
         color: rgb(90, 0, 2);
         text-align: center;
     }
-    
-    .textcontact{
-        font-size:xx-large;
+
+    .text-contact {
+        font-size: xx-large;
     }
-    
-    form{
+
+    form {
         border: 15px groove grey;
         border-radius: 5px;
-        background-color:rgb(90, 0, 2);
+        background-color: rgb(90, 0, 2);
     }
-    
-    
-    
-    /* tablet and desktop */
-    
-    
-    @media screen and (min-width: 768px) {
-    
-        /* Commun à toutes les pages */
-    .icon{
+}
+
+/* tablet and desktop à partir de 768px */
+
+@media screen and (min-width: 768px) {
+    /* Commun à toutes les pages */
+    .icon {
         width: 70px;
         height: 70px;
     }
-    
-    
-    .logo{
-        align-items: center;
+
+    .logo {
         width: 100px;
         height: 100px;
         margin-bottom: 10px;
+        display: flex;
     }
-    
-    
+
     /* Page Accueil */
-    
-    
-    p.titre{
-        font-size: x-larger; 
-        }
-    
-  
-    
-    .raquette{
+
+    p.titre {
+        font-size: x-large;
+    }
+
+    .raquette {
         height: 200px;
         width: 200px;
     }
-    
-    p.Column{
+
+    p.Column {
         padding: 10px;
-        margin:  0px 20px;
+        margin: 0px 20px;
     }
-    
-    .Container{
+    /* main */
+    .Container {
         display: grid;
         grid-template-columns: 1fr 4fr 2fr 1fr;
         grid-gap: 5px;
         grid-auto-rows: minmax(100px, auto);
     }
-    
-    
-    
-    .LeftSide{
+
+    .LeftSide {
         grid-column-start: 2;
-       
     }
-     
-    
-    
-    .RightSide{
+
+    .RightSide {
         grid-column-start: 3;
     }
-    
-    
-    
+
     /* Page Equipe */
-    .menuEquipe {
-        display: flex;                
-        padding:0;                    
-        justify-content:center;
+    .menu-equipe {
+        display: flex;
+        padding: 0;
+        justify-content: center;
     }
-    
-    .menuEquipe a {
-        display:block;                
-        min-width: 120px;              
-        margin: 1rem;               
-        padding: 0.5rem 0;            
-        text-align: center;             
+
+    .menu-equipe a {
+        display: block;
+        min-width: 120px;
+        margin: 1rem;
+        padding: 0.5rem 0;
+        text-align: center;
         background-color: rgb(217, 131, 36);
-        color: #fff;                  
-        text-decoration: none;        
-        border: 1px solid #fff;       
-        border-radius: 4px;          
-        transition: all 1s ;         
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        transition: all 1s;
     }
-    
-    
-    
-    
-    
-    
-    
-    .tableau{
+
+    .tableau {
         margin-bottom: 20px;
-       padding-left: 10px;
-       
-        
+        padding-left: 10px;
     }
-    
-    
-    
-    .card{
+
+    .card {
         display: inline-block;
     }
-    
-    
+}
+
+@media screen and (min-width: 1024px) {
+    * {
+        font-size: large;
     }
-    
-    @media screen and (min-width: 1024px) {
-    
-    *{font-size: large;}
-    
-    .card{
+
+    .card {
         display: inline-block;
     }
-    
-    
+}
+
+@media screen and (min-width: 2560px) {
+    * {
+        font-size: xx-large;
     }
-    
-    @media screen and (min-width: 2560px) {
-    
-        *{font-size:xx-large}
-    
-        .card{
-            display: inline-block;
-        }
-        
-        
-        }
+
+    .card {
+        display: inline-block;
+    }
+}
